@@ -46,20 +46,48 @@ footer{font-size:.85rem;color:#f6c7d8;margin-top:30px}
     <h2>हाम्रा सम्झनाहरू 📸</h2>
     <p>यहाँ तपाईंहरूका फोटो थप्न सक्नुहुन्छ।</p>
     <div class="gallery">
-      <div class="photo">
-       <div class="photo">
-         <img src="Couple.jpg">
-       </div>
-      <div class="photo">
-        <img src="Couple1.jpg">
-      </div>
-      <div class="photo">
-        <img src="Couple2.jpg">
-      </div>
-      <div class="photo">
-        <img src="Couple3.jpg">
-      </div>
-    </div>
+
+  <div class="photo">
+    <img src="Couple.jpg" alt="हाम्रो फोटो">
+  </div>
+
+  <div class="photo">
+    <img src="Couple1.jpg" alt="हाम्रो फोटो">
+  </div>
+
+  <div class="photo">
+    <img src="Couple2.jpg" alt="हाम्रो फोटो">
+  </div>
+
+  <div class="photo">
+    <img src="Couple3.jpg" alt="हाम्रो फोटो">
+  </div>
+
+</div>
+
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+  }
+
+  .photo {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+  }
+</style>
   </section>
   <footer>तिम्रो लागि, सधैँ माया सहित ❤️</footer>
 </main>
